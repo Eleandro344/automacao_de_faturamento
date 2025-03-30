@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+faturamento/__init__.py
+faturamento/__main__.py
+faturamento/bot.py
+faturamento.egg-info/PKG-INFO
+faturamento.egg-info/SOURCES.txt
+faturamento.egg-info/dependency_links.txt
+faturamento.egg-info/requires.txt
+faturamento.egg-info/top_level.txt
+faturamento/resources/start.png

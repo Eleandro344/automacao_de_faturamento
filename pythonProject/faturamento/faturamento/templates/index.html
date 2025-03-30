@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Faturamento Trimed</title>
+</head>
+
+<style>
+    :root {
+        --color-primary: #269fe6;
+        --color-primary-hover: #2086c2;
+        --color-primary-dark: #13141f;
+        --color-primary-dark-hover: #212336;
+        --color-primary-light: #d4ecfa;
+        --color-primary-light-hover: #bdd8e7;
+        --color-white: #fff;
+        --color-black: #000;
+        --color-dark-text: #444;
+        --color-info-light: #cce5ff;
+        --color-debug-light: #cce5ff;
+        --color-success-light: #d4edda;
+        --color-alert-light: #fff3cd;
+        --color-warning-light: #fff3cd;
+        --color-error-light: #f8d7da;
+        --color-info-dark: #4d86c4;
+        --color-debug-dark: #4d86c4;
+        --color-success-dark: #4a9c5d;
+        --color-alert-dark: #927f40;
+        --color-warning-dark: #927f40;
+        --color-error-dark: #da525d;
+        --color-gray-0: #f9f9f9;
+        --color-gray-1: #e0e0e0;
+        --color-gray-2: #c7c7c7;
+        --color-gray-3: #aeaeae;
+        --color-gray-4: #959595;
+        --color-gray-5: #7d7d7d;
+        --color-gray-6: #646464;
+        --color-gray-7: #4b4b4b;
+        --color-gray-8: #323232;
+        --color-gray-9: #191919;
+        --font-primary: sans-serif;
+        --font-headings: 'Roboto Slab', serif;
+        --spacing-gutter-medium: 3rem;
+        --spacing-gutter-large: 4rem;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-weight: bolder;
+        font-weight: $font-weight-bolder;
+        background: #DAA520;
+    }
+
+    lottie-player {
+        width: 270x;
+        /* Ajuste a largura da animação */
+        height: 270px;
+        /* Ajuste a altura da animação */
+    }
+
+    .container {
+        text-align: center;
+        /* Centraliza o conteúdo */
+        padding-top: 100px;
+        /* Espaçamento superior */
+    }
+
+    h1 {
+        font-family: impact;
+        font-size: 38px;
+        font-weight: bolder;
+        color: #000000;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #333;
+    }
+
+    button {
+        min-width: 300px;
+        max-width: 600px;
+        background: #2780b9;
+        color: #fff;
+        transition: all 0.14s;
+        background: #2780b9;
+        color: white;
+        border: none;
+        padding: 30px 40px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 20px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.9);
+        /* Sombra nos botões */
+
+    }
+
+    button:hover {
+        background-color: #0288d1;
+    }
+</style>
+
+
+<div class="container">
+    <h1>AUTOMAÇÃO DE FATURAMENTO TRIMED</h1>
+    <h2>Atenção! Esteja com a tela de NFe e a tela Venda do sistema abertos</h2>
+    <p>Status: {% if bot_running %}Inicou Faturamento{% else %}Faturamento Parado{% endif %}</p>
+    <form action="/start_bot" method="post">
+        <button type="submit" class="btn btn-primary">Iniciar Automação</button>
+    </form>
+    <form action="/stop_bot" method="post">
+        <button type="submit" class="btn btn-danger">Parar Automação</button>
+    </form>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </head>
+
+    <body>
+        <lottie-player src="https://lottie.host/fe9e4135-ddc0-495b-b522-155d79f0072a/0IXsDm2rQj.json" speed="1"
+            style="width: 200; height: 200" loop autoplay direction="1" mode="normal">
+        </lottie-player>
+    </body>
+
+</div>
+</body>
+</div>
+
+</html>
